@@ -1,0 +1,17 @@
+   0 mkdir /home/test
+   1 mkdir /home/test/Olga
+   2 touch /home/test/Olga/newfile.txt
+   3 date '+%D' >> newfile.txt
+   4 ls -a /
+   5 df -h /
+   6 df -h | tail -1 >> /home/test/Olga/newfile.txt
+   7 cat /home/test/Olga/newfile.txt
+   8 history
+   9 history | tail -5 >> /home/test/Olga/newfile.txt
+  10 cat /home/test/Olga/newfile.txt
+  11 ps -ef
+  12 ps -ef |grep vendor
+  13 ps -ef | grep vendor >> /home/test/Olga/newfile.txt
+  14 ps -ef | grep vendor | awk '{print $1}'
+  15 ps -ef | grep vendor | awk '{print $1}' >> /hone/test/Olga/newfile.txt
+  16 history > history_homework.txt
